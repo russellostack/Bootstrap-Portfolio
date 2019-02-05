@@ -2,37 +2,43 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="navbar">
-        <div class="nametag">
-            <h1>Russell Stack</h1>
-        </div>
-        <nav class="navlinks">
-            <ul>
-            <li><a href="#Contact">Contact</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#About Me">About Me</a></li>   
-            </ul>
+    <div class="center">
+        <nav class="navbar navbar-expand-md">
+            <h1 class="navbar-brand">Russell Stack</h1>
+                <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">About Me</a></li>   
+                </ul>
         </nav>
-    </header>
-    <div class="container">
-            <div class="containercenter">
-                <div class="containercontent">
-                    <h2>Contact</h2>
-                    <form>
-                        Name:<br>
-                        <input type="text" name=name  Value="Your Name">
-                        Email:<br>
-                        <input type="text" name="Email" value="Your@email.com">
-                        Message:<br>
-                        <textarea class="messagebox" name="message"></textarea><br>
-                        <input type="submit" value="submit">
-                    </form>
-                </div>
+    
+        <div>
+                <h2>Contact</h2>
+        </div>
+
+        <div class="row" id="border">
+        </div>  
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
             </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
 </body>
