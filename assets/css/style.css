@@ -80,6 +80,9 @@ h1{
 li+li{
     border-left:1px solid #dbd1d141;
 }
+h1{
+    color:#4aaaa5;
+}
 
 a{
     color:#777777;
